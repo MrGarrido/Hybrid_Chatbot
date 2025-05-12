@@ -81,7 +81,7 @@ System prompt has three components:
 - Describes agent role (buyer/supplier).
 - Set of negotiation issues (Price & Quality) and their respective payoffs.
 - Negotiation protocol rules.
-
+![Promptin_strategy drawio](https://github.com/user-attachments/assets/7e4bba2c-9ca4-4b9e-b5fd-f8be512770dd)
 ### Why do we need a dynamic prompt?
 - Every negotiation round has a random constraint (i.e., Procution Cost {1,2,3}) which determines the cost structure, thus, the payoffs described in the **system prompt** need to be calculated for the random constraint. 
 - The user prompt is adapted based on the counterpart message. Sometimes the system should counter-offer, or accept the offer, or remind the user of the use of the interface.
@@ -89,7 +89,7 @@ System prompt has three components:
 - During the negotiation conversation the dialogue is fed via user prompts with instructions to remember the negotiation rules, payoffs, and conversation history. Additionally, we leveraged in-context learning with few-shot examples of desired replies to user messages.
 
 ## Hybrid (Rule-Base + LLM):
-
+![Hybrid_Bot drawio-2](https://github.com/user-attachments/assets/5e707deb-5d1e-481a-b2ea-ab1ff90440ea)
 #### Offer Acceptance
 The offer acceptance mechanism does not leverage generative AI, is purely rule-based.
 - If the offer from the counterpart yields an acceptable profit, then the chatbot thanks the counterpart and the negotiation automatically ends with an agreement.
